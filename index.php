@@ -46,11 +46,11 @@ if ($action == 'list_items') {
 		header("Location: .?action=list_categories&deleted={$count}");
 	}
 
-} else if ($action== 'list_categories') {
+} else if ($action == 'list_categories') {
 	$categories = get_categories();
 	include('view/category_list.php');
 
-} else if ($action== 'add_item_form') {
+} else if ($action == 'add_item_form') {
 	$categories = get_categories();
 	include('view/add_item_form.php');
 
